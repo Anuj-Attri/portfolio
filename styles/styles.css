@@ -5,13 +5,31 @@ body {
     padding: 0;
 }
 
-#hero h1 {
-    font-size: 3rem;
+.image-container {
+    height: 200px; /* Set consistent height */
+    overflow: hidden; /* Hide overflow to crop images */
 }
 
-.card img {
-    height: 200px;
-    object-fit: cover;
+.image-container img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Crop and center image */
+    object-position: center; /* Focus on center */
+}
+
+.card {
+    margin-bottom: 20px; /* Spacing between cards */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
 }
 
 footer {
